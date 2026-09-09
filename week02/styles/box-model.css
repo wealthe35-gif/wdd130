@@ -1,15 +1,25 @@
 .callout {
-	
+  background-color: darkblue;
+  color: white;
+  margin: 20px auto;
+  padding: 25px;
 }
 
 .callout img {
-	
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 2px;
+  border: 2px solid white;
 }
 
 blockquote {
-	
+  margin: 0px;
 }
 
 cite {
-	
+  display: block;
+  clear: both;
+  border-top: 1px dotted white;
+  text-align: right;
 }

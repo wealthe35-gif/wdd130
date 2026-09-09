@@ -1,0 +1,28 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  background-color: darkblue;
+  color: white;
+  padding: 16px;
+  text-align: center;
+
+}
+
+nav {
+  background-color: darkblue;
+  padding: 10px;
+}
+
+a {
+  color: white;
+}
+
+img {
+  width: 150px;
+  height: auto;
+  border: 1px solid black;
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+}
