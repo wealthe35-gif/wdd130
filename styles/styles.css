@@ -7,7 +7,6 @@ h1 {
   color: white;
   padding: 16px;
   text-align: center;
-
 }
 
 nav {
@@ -19,10 +18,41 @@ a {
   color: white;
 }
 
-img {
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+main img {
   width: 150px;
   height: auto;
   border: 1px solid black;
   padding: 2px;
   box-shadow: 0 0 30px gray;
+}
+
+p {
+  padding: 0;
+}
+
+aside {
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  color: #333333;
+  font-style: initial;
+  text-align: center;
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+footer {
+  margin-top: 40px;
+  border-top: 2px solid darkblue;
+  text-align: center;
 }
