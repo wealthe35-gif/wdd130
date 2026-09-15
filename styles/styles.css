@@ -14,8 +14,11 @@ nav {
   padding: 10px;
 }
 
-a {
+nav a {
   color: white;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
 }
 
 main {
@@ -38,7 +41,9 @@ p {
 aside {
   width: 300px;
   margin: 20px auto;
+  border: 1px solid darkblue;
   padding: 15px;
+  background-color: #ffffff;
   color: #333333;
   font-style: initial;
   text-align: center;
