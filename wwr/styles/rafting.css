@@ -1,0 +1,152 @@
+/* ==========================================
+   1. DEFINE YOUR CSS VARIABLES 
+   ========================================== */
+:root {
+  --primary-color: #003366;
+  /* Deep water blue */
+  --accent1-color: #111111;
+  /* Background text tone */
+  --body-font: 'Valley Sans', Arial, sans-serif;
+  --heading-font: 'Valley Sans', Georgia, serif;
+}
+
+/* ==========================================
+   2. UNIVERSAL RESET 
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   3. GLOBAL BASE STYLES 
+   ========================================== */
+body {
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  background-color: #f9f9f9;
+}
+
+/* Centers the entire page block content in the browser window */
+header,
+main,
+footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+p,
+section,
+article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* ==========================================
+   4. VERTICAL NAVIGATION LAYOUT
+   ========================================== */
+header nav {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* FIXED: display: block forces links to break vertically down on separate lines */
+header nav a {
+  display: block;
+  color: var(--primary-color);
+  padding: 8px 0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+header nav a:hover {
+  color: #ff9900;
+  /* Smooth brand pop visual change on hover */
+}
+
+/* ==========================================
+   5. HERO DIV WITH OVERLAYS
+   ========================================== */
+.hero {
+  position: relative;
+  margin: 16px;
+}
+
+.hero img.hero-bg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Places title absolute directly on top of the banner image */
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.85;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+/* Places text box description absolute on top of the image */
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Floats the small client picture inside the text card */
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 12px;
+  border-radius: 4px;
+}
+
+/* ==========================================
+   6. FOOTER & SOCIAL MEDIA LOGOS
+   ========================================== */
+footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 2px solid var(--primary-color);
+  text-align: center;
+}
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* Standard baseline width for global footer social icons */
+.socialmedia img {
+  width: 40px;
+  height: auto;
+}
+
+/* FIXED: Targets and scales down ONLY the Instagram logo down to a smaller specific size */
+.socialmedia img.instagram-icon {
+  width: 28px;
+}
