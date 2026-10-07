@@ -4,11 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/rafting.css">
   <title>Contact Us | D Rafting Co</title>
-  <meta name="description" content="Get in touch withD Rafting Co Company. Find our location map, call our rafting guides, view our employee profiles,
-     or send us a message to book your next white-water rafting adventure.">
-  <link rel="stylesheet" href="rafting.css">
+  <meta name="description"
+    content="Contact D Rafting Co to book your next white-water rafting adventure. Find our location map and meet our expert hydrology guides.">
+  <meta name="author" content="Innocent Emmanuel">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
@@ -17,9 +17,11 @@
       <img src="images/logo.jpg" alt="Company Logo" class="logo">
     </div>
     <nav class="flex-nav">
+      <a href="../index.html">Course Home</a>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="contact.html" class="active">Contact Us</a>
+      <a href="trips.html">Trips</a>
     </nav>
   </header>
 
@@ -41,7 +43,7 @@
       <section class="map-container">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3174.5852164376665!2d-121.76789059967471!3d36.75458300683512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s123%20Main%20River%20Street%20%20Kolob%2C%20California%20%20%2B1%20999%20999%209999!5e0!3m2!1sen!2sng!4v1790888047963!5m2!1sen!2sng"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          width="600" height="450" allowfullscreen="" loading="lazy"
           referrerpolicy="strict-origin-when-cross-origin"></iframe>
       </section>
 
@@ -62,12 +64,12 @@
             <fieldset>
               <legend>Message Purpose</legend>
               <div class="radio-group">
-                <label><input type="radio" name="purpose" value="general" checked> General
-                  Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation
-                  Question</label>
-                <label><input type="radio" name="purpose" value="suggestion"> Website
-                  Suggestion</label>
+                <label for="purpose-general"><input type="radio" id="purpose-general" name="purpose"
+                    value="general" checked> General Inquiry</label>
+                <label for="purpose-reservation"><input type="radio" id="purpose-reservation"
+                    name="purpose" value="reservation"> Reservation Question</label>
+                <label for="purpose-suggestion"><input type="radio" id="purpose-suggestion"
+                    name="purpose" value="suggestion"> Website Suggestion</label>
               </div>
             </fieldset>
           </div>
@@ -79,8 +81,8 @@
           </div>
 
           <div class="form-item checkbox-item">
-            <label>
-              <input type="checkbox" name="subscribe" value="yes" checked>
+            <label for="subscribe">
+              <input type="checkbox" id="subscribe" name="subscribe" value="yes" checked>
               Please subscribe me to the monthly newsletter
             </label>
           </div>
@@ -123,14 +125,14 @@
 
   <footer class="grid-footer">
     <p>&copy; 2026 D Rafting Co | Innocent Emmanuel</p>
-    <div class="socialmedia">
+    <nav class="socialmedia">
       <a href="https://facebook.com" target="_blank"><img src="images/facebook.png"
           alt="Facebook Icon"></a>
       <a href="https://twitter.com" target="_blank"><img src="images/twitter.png"
           alt="Twitter Icon"></a>
       <a href="https://instagram.com" target="_blank"><img src="images/instagram_408758.png"
           alt="Instagram Icon" class="instagram-icon"></a>
-    </div>
+    </nav>
   </footer>
 </body>
 
